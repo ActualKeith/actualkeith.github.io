@@ -1,4 +1,4 @@
-body{
+html, body, input{
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -27,7 +27,7 @@ body{
   stroke-dashoffset: -474;
   stroke-width: 4px;
   fill: transparent;
-  stroke: #cccccc;
+  stroke: #aaa;
   border-bottom: 5px solid black;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
