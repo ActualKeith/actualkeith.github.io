@@ -12,7 +12,7 @@ html, body, input, textarea{
     -o-transition: 0.3s ease all; /* Opera */
     -ms-transition: 0.3s ease all; /* Explorer 10 */
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content {
     opacity: 1;
 }
 
@@ -42,7 +42,7 @@ html, body, input, textarea{
     top: -3.6em;
     padding: 0px 0px 0px 10px;
 }
-.svg-wrapper:active .shape, .svg-wrapper:hover .shape {
+.svg-wrapper:active .shape, , .svg-wrapper:hover .shape, .svg-wrapper:focus .shape {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   stroke-width: 4px;
   stroke-dashoffset: 0;
