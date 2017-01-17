@@ -28,6 +28,3 @@ permalink: pretty
 #pygments: true
 
 exclude: [Rakefile]
-
-gems: 
-- jekyll-browsersync

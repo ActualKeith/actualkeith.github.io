@@ -1,6 +1,22 @@
 body{
 	font-family: 'Roboto Condensed', sans-serif;
 }
+
+/* NAV*/
+.dropdown .dropdown-content {
+    opacity: 0;
+
+    transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all; /* Firefox 4 */
+    -webkit-transition: 0.3s ease all; /* Safari and Chrome */
+    -o-transition: 0.3s ease all; /* Opera */
+    -ms-transition: 0.3s ease all; /* Explorer 10 */
+}
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+}
+
+/* HOME SVG ANIMATION */
 .svg-wrapper {
   position: relative;
   margin: 0px auto -125px auto;

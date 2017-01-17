@@ -19,17 +19,17 @@
     "url": "https://github.com/mrmrs/tachyons/issues"
   },
   "devDependencies": {
-    "browser-sync": "^1.1.1",
+    "browser-sync": "^1.9.2",
     "copy-files": "^0.1.0",
     "immutable-css-cli": "^1.1.1",
     "tachyons-cli": "^1.0.8",
-    "watch": "^0.19.2"
+    "watch": "^0.19.2",
+    "gulp-shell": "^0.5.2",
+    "gulp": "^3.9.1",
+    "lodash": "^4.17.4"
   },
   "contributors": [
-    {
-      "name": "adam morse",
-      "email": "hi@mrmrs.cc"
-    }
+    "adam morse <hi@mrmrs.cc>"
   ],
   "scripts": {
     "start": "npm run build:watch",
@@ -38,5 +38,13 @@
     "build:css": "tachyons src/tachyons.css > css/tachyons.css",
     "build:minify": "tachyons src/tachyons.css -m > css/tachyons.min.css",
     "build:watch": "watch 'npm run build' ./src/"
+  },
+  "homepage": "https://github.com/mrmrs/jkl-tachyons",
+  "dependencies": {
+    "browser-sync": "~1.9.2",
+    "copy-files": "~0.1.0",
+    "tachyons-cli": "~1.0.10",
+    "immutable-css-cli": "~1.1.1",
+    "watch": "~0.19.3"
   }
 }
