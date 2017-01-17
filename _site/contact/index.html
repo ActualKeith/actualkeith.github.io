@@ -11,18 +11,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <!--<link rel="stylesheet" href="http://localhost:4000/css/jkl-tachyons.min.css">-->
-  <link rel="stylesheet" href="http://localhost:4000/css/tachyons.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/tachyons.css">
   <link rel="stylesheet" href="http://localhost:4000/css/style.css">
+  <script src="http://localhost:4000/js/custom.js"></script>
 </head>
 
-<body class="f6 bt bw2 b--gray gray">
+<body class="f7 bt bw2 b--gray gray">
 	<nav class="absolute pa4 dn-ns">
-  <a class="link dim gray    f6 f5-ns dib mr4" href="http://localhost:4000/" title="Home">Keith Thompson</a>
-  <a class="link dim gray    f6 f5-ns dib mr2" href="http://localhost:4000/work" title="Work">Work</a>
-  <a class="link dim gray    f6 f5-ns dib mr2" href="http://localhost:4000/about" title="About">About</a>
-  <div class="dropdown f6 f5-ns dib mr2">
-  	<a class="link dim gray dropbtn" title="Follow">Follow</a>
-    <ul class="list dropdown-content absolute pt2 pl0 ma0">
+  <a class="link dim gray    f7 dib mr4" href="http://localhost:4000/" title="Home">Keith Thompson</a>
+  <a class="link dim gray    f7 dib mr2" href="http://localhost:4000/work" title="Work">Work</a>
+  <a class="link dim gray    f7 dib mr2" href="http://localhost:4000/about" title="About">About</a>
+  <div class="mobile-dropdown f7 dib mr2">
+  	<a onClick="dropIt()" class="link dim gray dropbtn" title="Follow">Follow</a>
+    <ul id="mobileDropdown" class="list dropdown-content absolute pt2 pl0 ma0">
 		<li>
 	      <a class="link dim gray" href="http://twitter.com/actualkeith" title="Work">Twitter</a>
 	    </li>
@@ -32,7 +33,7 @@
 	</ul>
   </div>
   
-  <a class="link dim gray    f6 f5-ns dib" href="http://localhost:4000/contact" title="Contact">Contact</a>
+  <a class="link dim gray    f7 dib" href="http://localhost:4000/contact" title="Contact">Contact</a>
 </nav>
 	<section>
 	<article class="vh-100 dt w-100">
@@ -46,23 +47,23 @@
 					    <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
 						    <legend class="ph0 mh0 fw6 clip">Contact Form</legend>
 					      	<div class="mt3">
-						        <label class="db fw4 lh-copy f6" for="email-address">Name</label>
+						        <label class="db fw4 lh-copy f7" for="email-address">Name</label>
 						        <input class="pa1 pa2-ns input-reset ba bg-transparent w-100" type="text" name="email-address"  id="email-address">
 						    </div>
 						    <div class="mt3">
-						        <label class="db fw4 lh-copy f6" for="email-address">Email</label>
+						        <label class="db fw4 lh-copy f7" for="email-address">Email</label>
 						        <input class="pa1 pa2-ns input-reset ba bg-transparent w-100" type="email" name="email-address"  id="email-address">
 						    </div>
 						    <div class="mt3">
-						        <label class="db fw4 lh-copy f6" for="email-address">Subject</label>
+						        <label class="db fw4 lh-copy f7" for="email-address">Subject</label>
 						        <input class="pa1 pa2-ns input-reset ba bg-transparent w-100" type="text" name="email-address"  id="email-address">
 						    </div>
 						    <div class="mt3">
-						        <label class="db fw4 lh-copy f6" for="email-address">Message</label>
+						        <label class="db fw4 lh-copy f7" for="email-address">Message</label>
 						        <textarea class="pa1 pa2-ns h3 h4-ns input-reset ba bg-transparent w-100" type="text" name="email-address"  id="email-address"></textarea>
 						    </div>
 						</fieldset>
-					    <div class="mt3"><input class="ph2 pv1 input-reset ba b--black bg-transparent pointer f6" type="submit" value="Send"></div>
+					    <div class="mt3"><input class="ph2 pv1 input-reset ba b--black bg-transparent pointer f7" type="submit" value="Send"></div>
 					</form>
 			    </div>
 			  </div>

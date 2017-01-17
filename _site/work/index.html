@@ -11,18 +11,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <!--<link rel="stylesheet" href="http://localhost:4000/css/jkl-tachyons.min.css">-->
-  <link rel="stylesheet" href="http://localhost:4000/css/tachyons.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/tachyons.css">
   <link rel="stylesheet" href="http://localhost:4000/css/style.css">
+  <script src="http://localhost:4000/js/custom.js"></script>
 </head>
 
-<body class="f6 bt bw2 b--gray gray">
+<body class="f7 bt bw2 b--gray gray">
 	<nav class="absolute pa4 dn-ns">
-  <a class="link dim gray    f6 f5-ns dib mr4" href="http://localhost:4000/" title="Home">Keith Thompson</a>
-  <a class="link dim gray    f6 f5-ns dib mr2" href="http://localhost:4000/work" title="Work">Work</a>
-  <a class="link dim gray    f6 f5-ns dib mr2" href="http://localhost:4000/about" title="About">About</a>
-  <div class="dropdown f6 f5-ns dib mr2">
-  	<a class="link dim gray dropbtn" title="Follow">Follow</a>
-    <ul class="list dropdown-content absolute pt2 pl0 ma0">
+  <a class="link dim gray    f7 dib mr4" href="http://localhost:4000/" title="Home">Keith Thompson</a>
+  <a class="link dim gray    f7 dib mr2" href="http://localhost:4000/work" title="Work">Work</a>
+  <a class="link dim gray    f7 dib mr2" href="http://localhost:4000/about" title="About">About</a>
+  <div class="mobile-dropdown f7 dib mr2">
+  	<a onClick="dropIt()" class="link dim gray dropbtn" title="Follow">Follow</a>
+    <ul id="mobileDropdown" class="list dropdown-content absolute pt2 pl0 ma0">
 		<li>
 	      <a class="link dim gray" href="http://twitter.com/actualkeith" title="Work">Twitter</a>
 	    </li>
@@ -32,7 +33,7 @@
 	</ul>
   </div>
   
-  <a class="link dim gray    f6 f5-ns dib" href="http://localhost:4000/contact" title="Contact">Contact</a>
+  <a class="link dim gray    f7 dib" href="http://localhost:4000/contact" title="Contact">Contact</a>
 </nav>
 	<section>
 	<article class="vh-100 dt w-100">
@@ -44,7 +45,29 @@
 			    <div class="fl w-100 w-third-ns w-50-m pa2">
 			    	
 					<!-- portfolio item -->
-					
+					<div class="home-content page slideLeft" style="display: inline-block;"> <!-- GS -->
+          <div class="content-image next">
+              <img src="https://static1.squarespace.com/static/53066dfbe4b0d6e7c01dac56/57185b3bb6aa605dcf8a3e34/581af4b020099e33f3333820/1478161589312/ExpertPortfolioGymColor-01.png?format=750w">
+          </div>
+          <div class="content-desc">
+            <div class="title">
+              <a href="http://gymstandard.com" target="_blank">
+                <span class="link">Gym Standard</span>
+              </a>
+            </div>
+            <div class="description">
+              <p>Custom Shopify theme and set-up to enable this brick &amp; mortar retail space to expand their audience to the web for the first time.</p>
+            </div>
+            <div class="tools">
+              <ul>Tools:
+                <li>Shopify</li>
+                <li>Liquid</li>
+                <li>HTML/CSS</li>
+                <li>JQuery</li>
+              </ul>
+            </div>
+          </div>
+        </div> <!-- END GS -->
 			    </div>
 			  </div>
 			</div>
