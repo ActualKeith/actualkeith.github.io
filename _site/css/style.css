@@ -3,7 +3,6 @@ html, body, input, textarea{
 }
 
 /* NAV*/
-
 .dropdown .dropdown-content, .mobile-dropdown .dropdown-content {
     opacity: 0;
 
@@ -59,4 +58,11 @@ html, body, input, textarea{
 	  stroke-dashoffset: 0;
 	  stroke-dasharray: 760;
 	}
+}
+
+/*One Page Scroll Responsivity */
+.onepage-wrapper .ops-section {
+    width: auto !important;
+    height: auto !important;
+    position: inherit;
 }
