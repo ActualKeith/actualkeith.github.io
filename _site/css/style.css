@@ -28,33 +28,30 @@ html, body, input, textarea{
 .shape {
   stroke-dasharray: 100 500;
   stroke-dashoffset: -474;
-  stroke-width: 4px;
+  stroke-width: 2px;
   fill: transparent;
   stroke: #aaa;
-  border-bottom: 5px solid black;
+  border-bottom: 2px solid black;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
 .text {
     font-family: 'Futura';
-    font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 6px;
-    color: #4f4f4f;
     position: relative;
     text-align: left;
-    top: -3.6em;
-    padding: 0px 0px 0px 10px;
+    top: -4.5rem;
 }
 .svg-wrapper:active .shape, .svg-wrapper:hover .shape{
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  stroke-width: 4px;
+  stroke-width: 2px;
   stroke-dashoffset: 0;
   stroke-dasharray: 760;
 }
 @media all and (max-width: 480px){
 	.svg-wrapper .shape{
 	  -webkit-tap-highlight-color: rgba(0,0,0,0);
-	  stroke-width: 4px;
+	  stroke-width: 2px;
 	  stroke-dashoffset: 0;
 	  stroke-dasharray: 760;
 	}

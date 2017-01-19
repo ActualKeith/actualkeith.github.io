@@ -3,13 +3,12 @@
   {% include _scrollHead.html %}
 <body class="f7 gray">
 	{% include _navigation_mobile.html %}
-	<div class="main">
-		{{content}}
-	</div>
+	{{content}}
 	{% include _footer.html %}
 	{% include _navigation.html %}
 	{% include _google_analytics.html %}
 	<script type="text/javascript">
+	if (document.documentElement.clientWidth >= 480) {
 		onePageScroll(".main", {
 		   sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
 		   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", 
@@ -25,6 +24,7 @@
 		                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever 
 		                                    // the browser's width is less than 600, the fallback will kick in.
 		});
+	}
 	</script>
 </body>
 </html>
