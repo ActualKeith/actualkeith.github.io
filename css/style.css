@@ -1,6 +1,11 @@
 html, body, input, textarea{
 	font-family: 'Roboto Condensed', sans-serif;
 }
+@media all and (max-width: 479px){
+  body, html{
+    overflow: auto !important;
+  }
+}
 
 /* NAV*/
 .dropdown .dropdown-content, .mobile-dropdown .dropdown-content {
