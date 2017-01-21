@@ -1014,6 +1014,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 */
 /* Width Scale */
 .w1 { width: 1rem; }
+.w1-5 { width: 1.5rem; }
 .w2 { width: 2rem; }
 .w3 { width: 4rem; }
 .w4 { width: 8rem; }
