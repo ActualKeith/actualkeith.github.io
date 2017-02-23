@@ -26,6 +26,34 @@ html, body, input, textarea{
 .show{
     opacity: 1 !important;
 }
+.nav-link a span {
+    width: 0px;
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000;
+    height: 1px;
+    width: 0px;
+    margin: auto 0;
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+}
+
+.nav-link a:hover span {
+    width: 100% !important;
+}
+
+/*EFFEX*/
+/*
+.shadow-6 {
+    transition: 1s ease all;
+    background-color: white
+}
+.shadow-6:hover {
+    box-shadow: 0 7px 42px rgba(122,122,122,0.27);
+    transform: scale(1.02);
+}
+*/
 
 /* HOME SVG ANIMATION */
 .svg-container{
