@@ -31,7 +31,7 @@ html, body, input, textarea{
     content: '';
     display: block;
     position: absolute;
-    background-color: #000;
+    background-color: #111;
     height: 1px;
     width: 0px;
     margin: auto 0;
@@ -71,7 +71,7 @@ html, body, input, textarea{
   stroke-dashoffset: -474;
   stroke-width: 2px;
   fill: transparent;
-  stroke: #aaa;
+  stroke: #111;
   border-bottom: 2px solid black;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
