@@ -1,8 +1,8 @@
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function dropIt() {
-  console.log("droppin it");
-    document.getElementById("mobileDropdown").classList.toggle("show");
+function dropIt(id) {
+  console.log(id);
+  id.classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it

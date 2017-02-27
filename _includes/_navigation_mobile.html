@@ -1,18 +1,28 @@
 <nav class="pa4 dn-ns bt bw1 b--dark-gray">
   <a class="link dim dark-gray    f7 dib mr4" href="{{site.url}}/" title="Home">Keith Thompson</a>
   <div class="fr">
-    <a class="link dim dark-gray    f7 dib mr2" href="{{site.url}}/work" title="Work">Work</a>
+    <div class="mobile-dropdown f7 dib mr2">
+      <a onClick="dropIt(workDropdown)" class="link dark-gray dropbtn" title="Follow">Work</a>
+      <ul id="workDropdown" class="list dropdown-content absolute pt2 pl0 ma0">
+        <li>
+          <a class="link dim dark-gray" href="{{site.url}}/work" title="Work">Portfolio</a>
+        </li>
+        <li>
+          <a class="link dim dark-gray" href="{{site.url}}/testimonials" title="About">Testimonials</a>
+        </li>
+      </ul>
+    </div>
     <a class="link dim dark-gray    f7 dib mr2" href="{{site.url}}/about" title="About">About</a>
     <div class="mobile-dropdown f7 dib mr2">
-      <a onClick="dropIt()" class="link dim dark-gray dropbtn" title="Follow">Follow</a>
-      <ul id="mobileDropdown" class="list dropdown-content absolute pt2 pl0 ma0">
-      <li>
+      <a onClick="dropIt(followDropdown)" class="link dim dark-gray dropbtn" title="Follow">Follow</a>
+      <ul id="followDropdown" class="list dropdown-content absolute pt2 pl0 ma0">
+        <li>
           <a class="link dim dark-gray" href="http://twitter.com/actualkeith" title="Work">Twitter</a>
         </li>
         <li>
           <a class="link dim dark-gray" href="http://instagram.com/keithfarris" title="About">Instagram</a>
         </li>
-    </ul>
+      </ul>
     </div>
     <a class="link dim dark-gray    f7 dib" href="{{site.url}}/contact" title="Contact">Contact</a>
   </div>

@@ -20,18 +20,28 @@
 	<nav class="pa4 dn-ns bt bw1 b--dark-gray">
   <a class="link dim dark-gray    f7 dib mr4" href="http://localhost:4000/" title="Home">Keith Thompson</a>
   <div class="fr">
-    <a class="link dim dark-gray    f7 dib mr2" href="http://localhost:4000/work" title="Work">Work</a>
+    <div class="mobile-dropdown f7 dib mr2">
+      <a onClick="dropIt(workDropdown)" class="link dark-gray dropbtn" title="Follow">Work</a>
+      <ul id="workDropdown" class="list dropdown-content absolute pt2 pl0 ma0">
+        <li>
+          <a class="link dim dark-gray" href="http://localhost:4000/work" title="Work">Portfolio</a>
+        </li>
+        <li>
+          <a class="link dim dark-gray" href="http://localhost:4000/testimonials" title="About">Testimonials</a>
+        </li>
+      </ul>
+    </div>
     <a class="link dim dark-gray    f7 dib mr2" href="http://localhost:4000/about" title="About">About</a>
     <div class="mobile-dropdown f7 dib mr2">
-      <a onClick="dropIt()" class="link dim dark-gray dropbtn" title="Follow">Follow</a>
-      <ul id="mobileDropdown" class="list dropdown-content absolute pt2 pl0 ma0">
-      <li>
+      <a onClick="dropIt(followDropdown)" class="link dim dark-gray dropbtn" title="Follow">Follow</a>
+      <ul id="followDropdown" class="list dropdown-content absolute pt2 pl0 ma0">
+        <li>
           <a class="link dim dark-gray" href="http://twitter.com/actualkeith" title="Work">Twitter</a>
         </li>
         <li>
           <a class="link dim dark-gray" href="http://instagram.com/keithfarris" title="About">Instagram</a>
         </li>
-    </ul>
+      </ul>
     </div>
     <a class="link dim dark-gray    f7 dib" href="http://localhost:4000/contact" title="Contact">Contact</a>
   </div>
@@ -114,43 +124,41 @@
 	<nav role="navigation" class="absolute bottom-1 left-2 dn db-ns">
   <ul class="list pl0">
     <li class="nav-link pt1 pb3">
-      <a class="link dim dark-gray" href="http://localhost:4000/" title="Home">
+      <a class="link dark-gray" href="http://localhost:4000/" title="Home">
         Keith Thompson
         <span style="">&nbsp;</span>
       </a>
     </li>
-    <li class="nav-link">
-      <a class="link dim dark-gray" href="http://localhost:4000/work" title="Work">
+    <li class="nav-link dropdown desk">
+      <a class="link pointer dark-gray dropbtn dib mr2" title="Work">
         Work
         <span style="">&nbsp;</span>
       </a>
+      <div class="dropdown-content dib fr">
+        <a class="link dark-gray dib mr2" href="http://localhost:4000/work" title="Work">Portfolio</a>
+        <a class="link dark-gray dib" href="http://localhost:4000/testimonials" title="About">Testimonials</a>
+      </div>
     </li>
     <li class="nav-link pt1">
-      <a class="link dim dark-gray" href="http://localhost:4000/about" title="About">
+      <a class="link dark-gray" href="http://localhost:4000/about" title="About">
         About
         <span style="">&nbsp;</span>
       </a>
     </li>
     <li class="nav-link pt1 dropdown desk">
-      <a class="link dim dark-gray dropbtn dib mr2" title="Follow">
+      <a class="link dark-gray dropbtn dib mr2" title="Follow">
         Follow
         <span style="">&nbsp;</span>
       </a>
-      <div class="dropdown-content dib">
-        <a class="link dim dark-gray dib mr2" href="http://twitter.com/actualkeith" title="Work">Twitter</a>
-        <a class="link dim dark-gray dib" href="http://instagram.com/keithfarris" title="About">Instagram</a>
+      <div class="dropdown-content dib fr">
+        <a class="link dark-gray dib mr2" href="http://twitter.com/actualkeith" title="Work">Twitter</a>
+        <a class="link dark-gray dib" href="http://instagram.com/keithfarris" title="About">Instagram</a>
       </div>
     </li>
     <li class="nav-link pt1">
-      <a class="link dim dark-gray" href="http://localhost:4000/contact" title="Contact">
+      <a class="link dark-gray" href="http://localhost:4000/contact" title="Contact">
       Contact
       <span style="">&nbsp;</span>
-      </a>
-    </li>
-    <li class="nav-link pt1">
-      <a class="link dim dark-gray" href="http://localhost:4000/testimonials" title="About">
-        Testimonials
-        <span style="">&nbsp;</span>
       </a>
     </li>
   </ul>
