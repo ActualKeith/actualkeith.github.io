@@ -10,6 +10,15 @@ html, body, input, textarea{
   }
 }
 
+/*PICTURE LOAD EFFECTS*/
+img.fade-in {
+  opacity:0 ;
+  -moz-transition: opacity 1s; /* Firefox 4 */
+  -webkit-transition: opacity 1s; /* Safari and Chrome */
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
 /*TEXT EFFECTS*/
 .underline-animate::after {
   content: '';
