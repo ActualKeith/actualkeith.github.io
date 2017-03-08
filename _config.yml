@@ -1,7 +1,7 @@
 # This will be the first part of the title tag for your site <title> site.name + page.title </title>
-title: "Keith Thompson| San Diego Web Developer"
+title: "Keith Thompson | San Diego Web Developer"
 # Populates the meta description for the site. Should be under 150 characters for best SEO purposes.
-description: "Portfolio of work form San Diego based web deisgner and web developer, Keith Thompson."
+description: "Portfolio work for San Diego based freelance web developer & designer, Keith Thompson. Front-end developer, Shopify expert, open for freelance work!"
 
 # Owner (organization or individual) of site content
 author: "Keith Thompson"
