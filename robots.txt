@@ -3,4 +3,4 @@
 
 User-agent: *
 Disallow: /confirmation/
-Sitemap: /sitemap.xml
+Sitemap: https://actualkeith.com/sitemap.xml
