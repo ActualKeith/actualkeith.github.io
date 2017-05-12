@@ -111,7 +111,7 @@ img.fade-in {
   position: relative;
   margin: 0px auto -125px auto;
   width: calc(200px + 2rem);
-  height: calc(125px + 2rem); 
+  height: calc(125px + 2rem);
 }
 .shape {
   stroke-dasharray: 100 500;
@@ -120,7 +120,7 @@ img.fade-in {
   fill: transparent;
   stroke: #333;
   border-bottom: 2px solid #333;
-  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  /*transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;*/
 }
 .text {
     font-family: 'Futura';
@@ -130,7 +130,29 @@ img.fade-in {
     text-align: left;
     top: -4.5rem;
 }
-.svg-wrapper:active .shape, .svg-wrapper:hover .shape{
+@keyframes drawShape {
+	0% {
+		stroke-dasharray: 100 500;
+	  stroke-dashoffset: -474;
+	  stroke-width: 2px;
+	}
+	50% {
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		stroke-width: 2px;
+	  stroke-dashoffset: 0;
+	  stroke-dasharray: 760;
+	}
+	100% {
+		stroke-dasharray: 100 500;
+	  stroke-dashoffset: -474;
+	  stroke-width: 2px;
+	}
+}
+.svg-wrapper .shape{
+	animation: 3s ease-out 0s 1 drawShape;
+}
+/*
+.svg-wrapper:active .shape, .svg-wrapper .shape{
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   stroke-width: 2px;
   stroke-dashoffset: 0;
@@ -144,7 +166,7 @@ img.fade-in {
 	  stroke-dasharray: 760;
 	}
 }
-
+*/
 /*One Page Scroll Responsivity */
 .onepage-wrapper .ops-section {
     width: auto !important;
@@ -157,4 +179,32 @@ img.fade-in {
   .vh-special {
     height: calc(100vh - 82px);
   }
+}
+
+/* LOADER CSS */
+#loader {
+	z-index: 99999; /* anything higher than z-index: 1000 of .loader-section */
+}
+/* Loaded */
+.loaded #loader {
+	opacity: 0;
+}
+.loaded #loader-wrapper {
+	visibility: hidden;
+}
+.loaded #loader {
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-out;
+					transition: all 0.2s ease-out;
+}
+.loaded #loader-wrapper {
+        -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+
+        -webkit-transition: all 0.1s .5s linear;
+                transition: all 0.1s .5s linear;
+}
+.no-js #loader-wrapper {
+	display: none;
 }
