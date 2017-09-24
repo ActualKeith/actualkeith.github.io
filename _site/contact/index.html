@@ -56,7 +56,7 @@
 			  	<div class="fl w-100 w-third-ns w-25-m pa2">
 			    </div>
 			    <div class="fl w-100 w-third-ns w-50-m pa3 shadow-6">
-			    	<form action="https://www.formingo.co/submit/hello@actualkeith.com" method="post" target="">
+			    	<form action="https://formspree.io/hello@actualkeith.com" method="post" target="">
 					    <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
 						    <legend class="ph0 mh0 fw6 clip">Contact Form</legend>
 					      	<div class="mt3">
@@ -65,17 +65,18 @@
 						    </div>
 						    <div class="mt3">
 						        <label class="db fw4 lh-copy f7" for="email-address">Email</label>
-						        <input class="pa1 pa2-ns input-reset ba bg-transparent w-100" type="email" name="__replyto"  id="email-address">
+						        <input class="pa1 pa2-ns input-reset ba bg-transparent w-100" type="email" name="_replyto"  id="email-address">
 						    </div>
 						    <div class="mt3">
 						        <label class="db fw4 lh-copy f7" for="subject">Subject</label>
-						        <input class="pa1 pa2-ns input-reset ba bg-transparent w-100" type="text" name="__subject"  id="subject">
+						        <input class="pa1 pa2-ns input-reset ba bg-transparent w-100" type="text" name="_subject"  id="subject">
 						    </div>
 						    <div class="mt3">
 						        <label class="db fw4 lh-copy f7" for="message">Message</label>
 						        <textarea class="pa1 pa2-ns h3 h4-ns input-reset ba bg-transparent w-100" type="text" name="message"  id="message"></textarea>
 						    </div>
-						    <input type="hidden" name="__redirect" value="https://actualkeith.github.io/confirmation" />
+						    <input type="hidden" name="_next" value="https://actualkeith.github.io/confirmation" />
+								<input type="text" name="_gotcha" style="display:none" />
 						</fieldset>
 					    <div class="mt3"><input class="link dim ph2 pv1 input-reset ba b--black bg-transparent pointer f7" type="submit" value="Send"></div>
 					</form>
