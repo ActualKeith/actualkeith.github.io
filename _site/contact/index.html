@@ -56,55 +56,21 @@
 					<div class="fl w-100 w-third-ns w-25-m pa2">
 					</div>
 					<div class="fl w-100 w-third-ns w-50-m pa3 shadow-6">
-						<p class="ma0 pt2">For more information and to quote for your project, submit the form below:</p>
-
-						<form id="contactForm">
-							<fieldset id="sign_up" class="ba b--transparent ph0 mh0">
-								<legend class="ph0 mh0 fw6 clip">Contact Form</legend>
-								<div class="mt3">
-									<label class="db fw4 lh-copy f7" for="name">Name</label>
-									<input class="pa1 pa2-ns input-reset ba bg-transparent w-100" type="text" value="" name="name" required>
-								</div>
-								<div class="mt3">
-									<label class="db fw4 lh-copy f7" for="email-address">Email</label>
-									<input class="pa1 pa2-ns input-reset ba bg-transparent w-100" type="email" value="" name="email" required>
-								</div>
-							</fieldset>
-							<div id="submitWrap" class="mt3"><input id="contactSubmit"
-									class="link dim ph2 pv1 input-reset ba b--black bg-transparent pointer f7" type="submit" value="Send">
-							</div>
-						</form>
-
-						<p class="ma0 pt3 pb2">Just saying hi? <a href="mailto:hello@actualkeith.com"
-								class="link dark-gray dib underline-animate">hello@actualkeith.com</a></p>
-
+						<div class="fl w-100 pt4 pb2 tc">
+							<p class="pt2">Interested in working together?</p>
+						</div>
+						<div class="fl w-100 pt2 pb4 tc">
+							<a href="mailto:hello@actualkeith.com" class="link underline-animate dark-gray f7 dib">
+								hello@actualkeith.com
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</article>
 </section>
-<!-- Load jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script>
-	// POST form data to zapier on submit
-	$(function () {
-		$('#contactForm').submit(function (e) {
-			e.preventDefault();
-			$.ajax({
-				url: 'https://hooks.zapier.com/hooks/catch/3216981/7s7o44/',
-				type: 'post',
-				data: $('#contactForm').serialize(),
-				success: function () {
-					document.getElementById("contactForm").reset();
-					$('<p class="fr ma0 pv1">Hey Thanks!</p>').appendTo("#submitWrap");
-				}
-			});
-		});
 
-	});
-
-</script>
 	</div>
 	<nav role="navigation" class="absolute bottom-1 left-2 dn db-ns z-max">
   <ul class="list pl0">
